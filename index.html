@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>タイピングゲームのkeydownイベント対応について</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+  <h1>タイピングゲームのkeydownイベント対応について</h>
+  <h2>自身でいろいろ試した結果、下記3つ目の「keydownイベント対応版」をもって対応を完了したとしたいところだが、問題はなさそうか。</h2>
+  <p>先週のレッスンにて、「keypressイベント非推奨」という事実が判明した。<br>
+  それに伴い、【JavaScriptでタイピングゲームを作ろう】のタイピングゲームをkeydownイベントを使用したものに改修することを試みた。<br>
+  以下のリンク先で特徴の異なるタイピングゲームが実行できる。
+  </p>
+  <ul>
+    <li><a href="textVersion/index.html">テキストどおりのタイピングゲーム（keypressイベント使用）</a><br>
+      ※文字入力キー以外を押しても誤タイプ判定されないが、keypressを使用している。</li>
+    <li><a href="keydownVersion(notConpatibleShiftkey)/index.html">keypressイベント部分をkeydownイベントに変更しただけのもの</a><br>
+      ※シフトキーなどを押すと誤タイプ判定される。</li>
+    <li><a href="keydownVersion/index.html">keydownイベント対応版</a><br>
+      ※シフトキーなどを押しても誤タイプ判定されない。</li>
+    <img id="keydownImg" src="images/keydownVersion.png">
+  </ul>
+</body>
+
+</html>
